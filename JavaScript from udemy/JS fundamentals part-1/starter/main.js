@@ -135,7 +135,6 @@ console.log(Template);
 
 /*
 ============== if / else statement =============
-*/
 const age = 16;
 
 if (age >= 18) {
@@ -152,3 +151,75 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+*/
+
+/* 
+======================== codding challenge #2 ====================== 
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message
+// is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+// BMI (28.3) is higher than John's (23.9)!"
+// Hint: Use an if/else statement �
+console.log('Codding Challenge #2');
+let weightMark, weightJohn, heightMark, heightJohn;
+// bmi = mass / height ** 2;
+weightMark = 78;
+weightJohn = 92;
+heightMark = 1.69;
+heightJohn = 1.95;
+let bmiMark = weightMark / heightMark ** 2;
+let bmiJohn = weightJohn / heightJohn ** 2;
+console.log('Mark bmi = ', bmiMark);
+console.log('John bmi = ', bmiJohn);
+
+console.log('comparing bmi : John Higher?', bmiJohn > bmiMark);
+if (bmiMark > bmiJohn) {
+  console.log(`Mark's BMI (${bmiMark}) is higher than John's (${bmiJohn})!`);
+} else {
+  console.log(`John's BMI (${bmiJohn})is higher than Mark's (${bmiMark})!`);
+}
+*/
+
+/*
+==================== Type conversion and coercion ===================
+console.log(typeof 23);
+console.log(typeof String(23));
+console.log(typeof 'coe');
+console.log(typeof Number('coe'));
+// console.log(typeof Number(coe)); Will give error
+*/
+
+/*
+==================== Truthy and Falsy values =========================
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean(undefined));
+console.log(Boolean('mpe'));
+
+const money = 100;
+if (money > 0) {
+  console.log(`enjoy, but don't spend it all!`);
+} else {
+  console.log(`get job as soon as possible`);
+}
+
+let height = 0;
+if (height) {
+  console.log(`height is defined`);
+} else {
+  console.log(`it's not defined`);
+}
+*/
+
+/*
+================= Equality operators: == vs. === ==============
+const age = 18;
+if (age === 18) console.log(`u become adult`);
+*/
+
+/*
+===================== Logical Operators ====================
+*/
