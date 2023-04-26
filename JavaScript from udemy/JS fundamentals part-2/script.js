@@ -93,12 +93,14 @@ console.log(mixJuice);
 */
 
 /*============================== Reviewing function ===================================*/
-const calAge3 = (birthyear) => 2023 - birthyear;
+const calAge3 = function (birthyear) {
+  return 2023 - birthyear;
+};
 const age3 = calAge3(1996);
 console.log(age3);
 
 const retairYear = function (birthyear, firstName) {
-  const age = 2023 - birthyear;
+  const age = calAge3(birthyear);
   const retaor = 65 - age;
 
   return `${firstName} retires in ${retaor} years`;
@@ -107,3 +109,4 @@ const retairYear = function (birthyear, firstName) {
 console.log(retairYear(1996, 'Maulik'));
 console.log(retairYear(1995, 'Sweta'));
 console.log(retairYear(1970, 'Rajendra'));
+console.log(retairYear(1940, 'Sita'));
