@@ -282,4 +282,124 @@ const total = [bills[0] + tips[0], bills[1] + tips[1], bills[bills.length - 1] +
 console.log(total);
 */
 
-/*============================ introduction to Object =================================*/
+/*============================ introduction to Object =================================
+const Maulik = {
+  firstName: 'Maulik',
+  lastName: 'Patel',
+  age: 2023 - 1996,
+  job: 'Web Developer',
+  friends: ['Abhi', 'Ahemad', 'Zill'],
+};
+
+console.log(Maulik);
+
+// ============================= Dot vs. Bracket Notation ==============================
+console.log(Maulik.firstName);
+console.log(Maulik['lastName']);
+
+const nameKey = 'Name';
+console.log(Maulik['first' + nameKey]);
+console.log(Maulik['last' + nameKey]);
+
+// .console.log(Maulik.'last' + nameKey) // Dot notation does not work here for more functionality
+
+// const findInfo = prompt(`What do you want to know about Maulik?
+// Choose between his fo firstName, lastName or age`);
+// console.log(Maulik[findInfo]);
+
+Maulik.location = 'India';
+console.log(Maulik);
+
+console.log(`Maulik has ${Maulik['friends'].length} friends and first name on this list ie ${Maulik['friends'][0]}.`);
+*/
+
+/* ========================== Object Methods =========================================
+const Maulik = {
+  firstName: 'Maulik',
+  lastName: 'Patel',
+  birthyear: 1996,
+  age: 2023 - 1996,
+  job: 'Web Developer',
+  friends: ['Abhi', 'Ahemad', 'Zill'],
+
+  // calAge: function (birthyear) {
+  //   return 2023 - birthyear;
+  // },
+
+  calAge: function () {
+    return 2023 - this.birthyear;
+  },
+};
+
+console.log(Maulik.calAge());
+console.log(Maulik.calAge());
+*/
+
+/*========================== Coding Challenge 3 ====================================
+// Coding Challenge #3
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
+// implement the calculations! Remember: BMI = mass / height ** 2 = mass
+// / (height * height) (mass in kg and height in meter)
+// Your tasks:
+// 1. For each of them, create an object with properties for their full name, mass, and
+// height (Mark Miller and John Smith)
+// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same
+// method on both objects). Store the BMI value to a property, and also return it
+// from the method
+// 3. Log to the console who has the higher BMI, together with the full name and the
+// respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+// Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+// tall.
+// GOOD LUCK �
+
+const mark = {
+  fullName: 'Mark',
+  mass: 78,
+  height: 1.69,
+
+  calBMI: function () {
+    return this.mass / (this.height * this.height);
+  },
+};
+const john = {
+  fullName: 'John',
+  mass: 92,
+  height: 1.95,
+  calBMI: function () {
+    return this.mass / (this.height * this.height);
+  },
+};
+
+console.log(mark.calBMI());
+console.log(john.calBMI());
+
+const heigherBMI = function () {
+  if (mark.calBMI() > john.calBMI()) {
+    console.log(`${mark.fullName} has higher BMI ${mark.calBMI()} than John's BMI ${john.calBMI()}`);
+  } else {
+    console.log(`${john.fullName} has higher BMI ${john.calBMI()} than mark (${mark.calBMI()})`);
+  }
+};
+
+heigherBMI();
+*/
+
+/* ============================= Iteration: the for loop ==============================*/
+console.log('lift weight to repeat time 1');
+console.log('lift weight to repeat time 2');
+console.log('lift weight to repeat time 3');
+console.log('lift weight to repeat time 4');
+console.log('lift weight to repeat time 5');
+console.log('lift weight to repeat time 6');
+console.log('lift weight to repeat time 7');
+console.log('lift weight to repeat time 8');
+console.log('lift weight to repeat time 9');
+console.log('lift weight to repeat time 10');
+console.log('lift weight to repeat time 11');
+console.log('lift weight to repeat time 12');
+
+// for loop
+console.log(`Using For loop`);
+for (let rep = 1; rep <= 22; rep++) {
+  console.log(`lift weight to repeat time ${rep}`);
+}
