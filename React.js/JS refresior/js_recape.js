@@ -16,10 +16,9 @@ myName2();
 // const newnumbers = [...numbers, 5];
 // console.log(newnumbers);
 
-function transformToObjects(numbers) {
-  return numbers.map(function (num) {
-    return { val: num };
-  });
-}
-
-transformToObjects();
+// function transformToObjects(numbers) {
+//   return numbers.map(function (num) {
+//     return { val: num };
+//   });
+// }
+// transformToObjects();
